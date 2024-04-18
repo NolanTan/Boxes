@@ -1,12 +1,12 @@
 # BOXES Linux Tool Demo
 
-Nolan Flinchum and Yazmin Cosme Escobedo
-Western Carolina University
-4/17/2024
+- Nolan Flinchum and Yazmin Cosme Escobedo
+- Western Carolina University
+- 4/17/2024
 
 ## Description
 
-Preparing for a demo of the Linux tool 'boxes'.
+- Preparing for a demo of the Linux tool 'boxes'.
 
 ## Tests to Remember
 
