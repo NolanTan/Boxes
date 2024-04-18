@@ -1,0 +1,61 @@
+BOX nolan
+
+author   "Nolan Flinchum"
+designer "Nolan Flinchum"
+tags     ("simple", "artwork", "box")
+
+sample
+    +- NOLAN'S MESSAGE -+
+    |                   |
+    |                   |
+    |      nolan        |
+    |                   |
+    |                   |
+    +-------------------+
+ends
+
+shapes {
+    nw ("+") nnw ("-") n (" NOLAN'S MESSAGE ") nne ("-") ne ("+")
+     w ("|")                                              e ("|")
+    sw ("+")                   s ("-")                   se ("+")
+}
+
+padding {
+    horiz 5
+    vertical 2
+}
+
+elastic (nne, nnw, e, s, w)
+
+END nolan
+
+# =========================================================
+
+BOX oh
+
+sample
+    OooooooooooooO
+    o            o
+    o            o
+    o  Oh Golly  o
+    o            o
+    OooooooooooooO
+ends
+
+shapes {
+    nw ("O") n ("o") ne ("O")
+     w ("o")          e ("o")
+    sw ("O") s ("o") se ("O")
+}
+
+padding {
+    all 2
+    bottom 1
+}
+
+elastic (n, e, s, w)
+
+END oh
+
+# =========================================================
+
