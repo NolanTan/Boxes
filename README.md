@@ -26,6 +26,7 @@
 - boxes input.txt -s 80x15 -a jrvt
 - boxes input.txt -s 80x15 -a jcvbhr
 
+#### alignment shortcuts
 - boxes input.txt -s 80x15 -a l
 - boxes input.txt -s 80x15 -a r
 - boxes input.txt -s 80x15 -a c
@@ -53,16 +54,16 @@
 - boxes -d cowsay -m broken.txt
 
 #### remove
-cat cow.txt
-cat cow.txt | boxes -r (auto detection fails)
-cat cow.txt | boxes -r -d cowsay
+- cat cow.txt
+- cat cow.txt | boxes -r (auto detection fails)
+- cat cow.txt | boxes -r -d cowsay
 
 #### create (shortcut for regional comments)
-boxes -c // input.txt
+- boxes -c // input.txt
 
 #### vim configuration
-cat ~/.vimrc
-vim HelloWorld.java
-,mc
+- cat ~/.vimrc
+- vim HelloWorld.java
+- ,mc
 
 
