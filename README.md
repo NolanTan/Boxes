@@ -15,28 +15,32 @@
 - echo "This is my message" | boxes
 - boxes -> Hello -> Ctrl D (not typical)
 
+#### size
+- boxes input.txt
+- boxes input.txt -s 80x15
+
+#### alignment
+- boxes input.txt -s 80x15 -a jc
+- boxes input.txt -s 80x15 -a jr
+- boxes input.txt -s 80x15 -a jrvb
+- boxes input.txt -s 80x15 -a jrvt
+- boxes input.txt -s 80x15 -a jcvbhr
+
+- boxes input.txt -s 80x15 -a l
+- boxes input.txt -s 80x15 -a r
+- boxes input.txt -s 80x15 -a c
+
+#### padding
+- boxes input.txt -p h8v9
+- boxes input.txt -p h8v9 -a vb (doesn't work because padding applies to inside box)
+- boxes input.txt -p a5r0
+
 #### prebuilt boxes
 - boxes -l (list)
 - boxes -q color (query)
 - echo "Don't do that" | boxes -d critical
 - boxes -d whirly input.txt
 - echo "This is my message" | boxes -d xes
-
-#### alignment
-- echo "This is my message" | boxes -d xes -a vb
-- echo "This is my message" | boxes -d xes -a vc
-- echo "This is my message" | boxes -d xes -a vcjr (jr won't work)
-- echo "This is my message: | boxes -d xes -a vchr (will work)
-- boxes -d xes -a vchrjr input.txt (properly show jr)
-
-#### alignment shortcuts
-- boxes -d xes -a r input.txt
-- boxes -d xes -a c input.txt
-- boxes -d xes -a l input.txt
-
-#### padding
-- boxes input.txt -p h8v9
-- boxes input.txt -p a5r0
 
 #### custom box configuration files
 - echo "Hello Everyone" | boxes -f my-boxes-config
@@ -47,3 +51,18 @@
 - echo "Hi" | boxes -d cowsay
 - vim broken.txt
 - boxes -d cowsay -m broken.txt
+
+#### remove
+cat cow.txt
+cat cow.txt | boxes -r (auto detection fails)
+cat cow.txt | boxes -r -d cowsay
+
+#### create (shortcut for regional comments)
+boxes -c // input.txt
+
+#### vim configuration
+cat ~/.vimrc
+vim HelloWorld.java
+,mc
+
+
